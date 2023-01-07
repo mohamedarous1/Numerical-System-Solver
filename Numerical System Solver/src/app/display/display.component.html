@@ -1,0 +1,29 @@
+
+<body> 
+<h1>
+  {{name}}
+</h1>
+<div class="di">
+  <ul>
+    <li class="li" *ngFor="let ss of mul">
+      <ul>
+        <li class="sLi" *ngFor="let su of ss;">
+          <div *ngIf="getType(su)">
+            {{su}}
+          </div>
+          <div *ngIf="!getType(su)">
+            <table>
+              <tr *ngFor="let item of su ">
+                <td *ngFor="let temp of item">
+                  {{temp}}
+                </td>
+              </tr>
+            </table>
+          </div>
+          <br><br>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+</body>

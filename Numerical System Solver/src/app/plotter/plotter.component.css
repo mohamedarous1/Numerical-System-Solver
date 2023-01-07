@@ -1,0 +1,36 @@
+
+.body
+{
+  width:80%;
+  height:70%;
+  position:relative;
+}
+
+canvas
+{
+  width:80%;
+  height:50%;
+}
+
+
+.divv
+{
+  position: relative;
+  display: block;
+  bottom: 10px;
+  width:100%;
+  height:100%;
+  /*color: #009f7f;*/
+  color: black;
+
+  font-size:x-large;
+}
+
+
+h1
+{
+  position: fixed;
+  font-family:'Franklin Gothic Medium';
+  left: 44%;
+  color: rgb(238, 227, 227);
+}

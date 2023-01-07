@@ -1,0 +1,72 @@
+<body>
+
+<span>
+  <input  type="number" [(ngModel)]="size" (input)="inputChange()" [min]="0"   >
+</span>
+<span>
+     &#160; &#160; &#160;
+</span>
+<span>
+  <input  type="number" [(ngModel)]="per" [min]="2" >
+</span>
+<span>
+     &#160; &#160; &#160;
+</span>
+<span>
+  <select [(ngModel)]="str">
+    <option value="gaussG">Gauss Gordan</option>
+    <option value="gaussE">Gauss Elimination</option>
+
+    <option value="jacobi">Jacobi</option>
+    <option value="seidel">Seidel</option>
+    <option value="luC">LU Court</option>
+    <option value="lud">LU Doolittle</option>
+    <option value="luCh">LU Cholescky</option>
+  </select>
+</span>
+<span>
+     &#160; &#160; &#160;
+</span>
+<span *ngIf="getEnable()">
+  <input type="checkbox" [(ngModel)]="gaussFlag"><label>Scaling</label>
+</span>
+<span *ngIf="getEnable2()">
+  <label>Iterations</label>
+</span>
+<span *ngIf="getEnable2()">
+  <input type="number" [(ngModel)]="jacobiPar">
+</span>
+<span>
+     &#160; &#160; &#160;
+</span>
+<span *ngIf="getEnable2()">
+  <label>Error</label>
+</span>
+
+<span *ngIf="getEnable2()">
+  <input type="number" [(ngModel)]="type">
+</span>
+<br>
+<br>
+<br>
+<br>
+
+<div *ngFor="let i of arr">
+  <span *ngFor="let j of arr">
+    <input type="number" [(ngModel)]="multi[i][j]">
+  </span>
+  <span>
+    <span>
+     &#160; &#160; &#160;
+  </span>
+     <input type="number" [(ngModel)]="b[i]">
+  </span>
+  <span>
+     &#160; &#160; &#160;
+  </span>
+  <span *ngIf="getEnable2()">
+     <input type="number" [(ngModel)]="intial[i]">
+  </span>
+</div>
+<button (click)="submit()" routerLink="/answer">SUBMIT</button>
+</body>

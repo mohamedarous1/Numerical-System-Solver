@@ -1,0 +1,25 @@
+.li{
+  list-style-type: -moz-ethiopic-numeric;
+  font-weight: bold;
+  font-size: 20px;
+}
+.sLi{
+  list-style-type: none;
+}
+table, th, td {
+  border: 2px solid black;
+  height: 50px;
+  width: 1000px;
+  border-radius: 10px;
+  border-color: #51c5c5;
+}
+
+body {
+  background: rgba(237, 237, 233, 0.4);
+  width: 3000px;
+  height:1000px;
+}
+li:hover
+{
+  background: rgba(191, 191, 164,0.3);
+}

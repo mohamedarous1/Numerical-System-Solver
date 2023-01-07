@@ -1,0 +1,56 @@
+<div class="container" >
+    <div >
+      <div class="dropdown" id = "main">
+
+
+        <label id ="labelsol">Enter the desired precision: </label>
+        <select id="percisions">
+          <option value="1" >1</option>
+          <option value="2" >2</option>
+          <option value="3" >3</option>
+          <option value="4" >4</option>
+          <option value="5" >5</option>
+          <option value="6" >6</option>
+          <option value="7" >7</option>
+          <option value="8" >8</option>
+          <option value="9" >9</option>
+          <option value="10" >10</option>
+          <option value="11" >11</option>
+          <option value="12" >12</option>
+          <option value="13" >13</option>
+          <option value="14" >14</option>
+          <option value="15" >15</option>
+          <option value="16" >16</option>
+          <option value="17" >17</option>
+          <option value="18" >18</option>
+          <option value="19" >19</option>
+          <option value="20" >20</option>
+        </select>
+        <select   id = "selectSolver"  >
+            <option value="0">Bisection Method</option>
+            <option value="1">False Position</option>
+            <option value="2">Fixed Point</option>
+            <option value="3">Newton Raphson Method</option>
+            <option value="4">Secant Method</option>
+          </select>
+      <label id ="labelsol" style="margin-top: 20px;">Enter the desired iterations: </label>
+      <input type="number" id="iterations"  placeholder="50" style="width: 50px; margin-top: 20px; border-radius: 10px;">
+      <label id ="labelsol"  style="margin-top: 20px; margin-left: 10px;">Enter desired tolerance: </label>
+      <input type="number" id="percision"  placeholder="0.00001" style="width: 70px; margin-top: 20px; border-radius: 10px;">
+
+       <div id="yes">
+        <label id ="labelsol" style="margin-top: 20px;">Enter inital values: </label>
+        <input type="number" id="intial1"  placeholder="0" required style="width: 50px; margin-top: 20px; border-radius: 10px;">
+        <input type="number" id="intial2"  placeholder="1" required style="width: 50px; margin-top: 20px; border-radius: 10px;">
+       </div>
+      </div>
+    </div>
+
+        <textarea  style=" margin-top: 40px;" id = "textinput"  cols = "70" row = "10"  spellcheck = "false"  class = "box"></textarea><br>
+      <button style="margin-left: 200px; margin-top: 40px;" id = "solve" (click)="result()"  >Solve</button>
+      <div id="5000">
+        <div id="soln">
+        </div>
+      </div>
+
+</div>
